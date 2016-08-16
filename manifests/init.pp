@@ -74,6 +74,7 @@ class devpi (
   $service_name    = $::devpi::params::service,
   $user            = $::devpi::params::user,
   $group           = $::devpi::params::group,
+  $user_home       = $::devpi::params::user_home,
   $manage_user     = true,
   $listen_host     = '0.0.0.0',
   $listen_port     = 3141,

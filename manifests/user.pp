@@ -3,7 +3,7 @@ class devpi::user {
   if $::devpi::manage_user {
     @user { $::devpi::user:
       ensure     => $::devpi::ensure,
-      home       => '/home/devpi',
+      home       => $::devpi::user_home,
       gid        => $::devpi::group,
       managehome => true
     }

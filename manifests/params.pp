@@ -1,6 +1,7 @@
 class devpi::params {
   $user = 'devpi'
   $group = 'devpi'
+  $user_home = '/home/devpi'
   $package = 'devpi-server'
   $package_client = 'devpi-client'
   $service = 'devpi-server'
